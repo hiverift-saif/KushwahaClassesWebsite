@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import banner1 from "../assets/1becfae0d65fee5409340648d3a1e28ae4636d35.png";
-import banner2 from "../assets/1becfae0d65fee5409340648d3a1e28ae4636d35.png";
+import banner1 from "../assets/one.png";
+import banner2 from "../assets/two.png";
 
 const banners = [banner1, banner2];
 

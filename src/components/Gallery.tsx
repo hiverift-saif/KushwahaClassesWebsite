@@ -2,65 +2,153 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "./ui/dialog";
 import { X } from "lucide-react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import facultyImage from "figma:asset/6a8fe49e70af567f42cc2b59fae9ae7a62c3e9f4.png";
-import studentsImage1 from "figma:asset/9562c93d48ed297e6e668562cba87afa47fe2e9f.png";
-import studentsImage2 from "figma:asset/881662d71cdddc795b72ac9fe778242b0c6823b3.png";
-import classroomImage1 from "figma:asset/a8d8ebce117d4307b500cf2c5657cbecc42404d5.png";
-import classroomImage2 from "figma:asset/1629e153fa0365432b1a6a102bc969681485dab8.png";
-import groupPhoto from "figma:asset/1becfae0d65fee5409340648d3a1e28ae4636d35.png";
-import teacherDesk from "figma:asset/f90d6d5492b197e3c049d5438951f50cd3394747.png";
-import classroomSession from "figma:asset/8268ebc25dac5ec76a1684d77cd447944c96d777.png";
+// import img1 from "../assets/1.png";
+import img2 from "../assets/2.png";
+import img3 from "../assets/3.png";
+import img4 from "../assets/4.png";
+import img5 from "../assets/5.png";
+import img6 from "../assets/6.png";
+import img7 from "../assets/7.png";
+import img8 from "../assets/8.png";
+import img9 from "../assets/9.png";
+import img10 from "../assets/10.png";
+import img11 from "../assets/11.png";
+import img12 from "../assets/12.png";
+import img13 from "../assets/13.png";
+import img14 from "../assets/14.png";
+import img15 from "../assets/15.png";
+import img16 from "../assets/16.png";
+import img17 from "../assets/17.png";
+import img18 from "../assets/18.png";
+import img19 from "../assets/19.png";
+import img20 from "../assets/20.png";
+
 
 const galleryImages = [
+  // {
+  //   src: img1,
+  //   title: "Sir Narendra Kumar",
+  //   category: "Faculty",
+  //   description: "Expert Physics Teacher at Kushwaha Classes",
+  // },
   {
-    src: facultyImage,
-    title: "Sir Narendra Kumar",
-    category: "Faculty",
-    description: "Expert Physics Teacher at Kushwaha Classes",
-  },
-  {
-    src: teacherDesk,
+    src: img2,
     title: "Dedicated Educator",
     category: "Faculty",
     description: "Sir Narendra Kumar - Committed to student success",
   },
   {
-    src: classroomImage1,
+    src: img3,
     title: "Classroom Celebration",
     category: "Classroom",
     description: "Teacher and students celebrating success together",
   },
   {
-    src: classroomImage2,
+    src: img4,
     title: "Victory Moment",
     category: "Classroom",
-    description: "Students celebrating their achievements with Sir Narendra Kumar",
+    description: "Students celebrating achievements with Sir Narendra Kumar",
   },
   {
-    src: groupPhoto,
+    src: img5,
     title: "Class Group Photo",
     category: "Classroom",
-    description: "Entire class with faculty celebrating achievements at Kushwaha Classes",
+    description: "Entire class with faculty celebrating achievements",
   },
   {
-    src: classroomSession,
+    src: img6,
     title: "Interactive Learning",
     category: "Classroom",
     description: "Engaging classroom session with students and faculty",
   },
   {
-    src: studentsImage1,
+    src: img7,
     title: "Students Celebration",
     category: "Students",
     description: "Our successful students celebrating their achievements",
   },
   {
-    src: studentsImage2,
+    src: img8,
     title: "Learning Together",
     category: "Students",
     description: "Interactive learning environment at Kushwaha Classes",
   },
+
+  // ✅ New Added (9–20)
+  {
+    src: img9,
+    title: "Motivation Session",
+    category: "Faculty",
+    description: "Sir Narendra Kumar motivating students for success",
+  },
+  {
+    src: img10,
+    title: "Science Demonstration",
+    category: "Classroom",
+    description: "Hands-on learning activity in Physics class",
+  },
+  {
+    src: img11,
+    title: "Focused Classroom",
+    category: "Classroom",
+    description: "Students focused during concept explanation",
+  },
+  {
+    src: img12,
+    title: "Doubt Solving Session",
+    category: "Faculty",
+    description: "Sir Narendra Kumar clearing doubts personally",
+  },
+  {
+    src: img13,
+    title: "Student Group Study",
+    category: "Students",
+    description: "Students studying together before the test",
+  },
+  {
+    src: img14,
+    title: "Achievement Medal Ceremony",
+    category: "Students",
+    description: "Top-performing students receiving awards",
+  },
+  {
+    src: img15,
+    title: "Whiteboard Session",
+    category: "Classroom",
+    description: "Faculty explaining concepts on board",
+  },
+  {
+    src: img16,
+    title: "Exam Preparation",
+    category: "Students",
+    description: "Intense preparation session before exams",
+  },
+  {
+    src: img17,
+    title: "Class Interaction",
+    category: "Classroom",
+    description: "Teacher interacting with students during lecture",
+  },
+  {
+    src: img18,
+    title: "Motivational Talk",
+    category: "Faculty",
+    description: "Sir Narendra Kumar delivering motivational speech",
+  },
+  {
+    src: img19,
+    title: "Celebrating Success",
+    category: "Students",
+    description: "Students celebrating great results",
+  },
+  {
+    src: img20,
+    title: "Farewell Group Photo",
+    category: "Classroom",
+    description: "Students and teachers at farewell event",
+  },
 ];
+
 
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
