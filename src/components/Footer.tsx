@@ -103,8 +103,8 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex gap-2">
                 <Mail className="size-5 flex-shrink-0 text-orange-400" />
-                <a href="mailto:info@firebrick-moose-845129.hostingersite.com" className="hover:text-orange-400 transition-colors">
-                  info@firebrick-moose-845129.hostingersite.com
+                <a href="mailto:khushwaha.classes@gmail.com" className="hover:text-orange-400 transition-colors">
+                  khushwahaclasses@gmail.com
                 </a>
               </li>
             </ul>
