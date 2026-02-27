@@ -12,6 +12,7 @@ import { Gallery } from "./components/Gallery";
 import { Blog } from "./components/Blog";
 import { BlogPost } from "./components/BlogPost";
 import { Toaster } from "./components/ui/sonner";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<string>("main");
@@ -57,7 +58,14 @@ export default function App() {
           <Blog onReadPost={handleReadPost} />
         )
       ) : null}
-      
+      <FloatingWhatsApp 
+        phoneNumber="9990455757" // Replace with your actual WhatsApp number
+        accountName="Kushwaha Classes"
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+      />
       <Footer onNavigate={handleNavigate} />
     </div>
   );
